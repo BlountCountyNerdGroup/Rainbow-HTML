@@ -7,42 +7,22 @@
 <body>
     <nav>
         <ul>
-            <li class="main-nav-li" id="red"><a onclick="changeToRed()">red</a></li>
-            <li class="main-nav-li" id="orange"><a onclick="changeToOrange()">orange</a></li>
-            <li class="main-nav-li" id="yellow"><a onclick="changeToYellow()">yellow</a></li>
-            <li class="main-nav-li" id="green"><a onclick="changeToGreen()">green</a></li>
-            <li class="main-nav-li" id="blue"><a onclick="changeToBlue()">blue</a></li>
-            <li class="main-nav-li"id="indigo"><a onclick="changeToIndigo()">indigo</a></li>
-            <li class="main-nav-li" id="violet"><a onclick="changeToViolet()">violet</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('red')">red</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('orange')">orange</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('yellow')">yellow</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('green')">green</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('blue')">blue</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('indigo')">indigo</a></li>
+            <li class="main-nav-li"><a onclick="changeToColor('violet')">violet</a></li>
             
         </ul>
     </nav>
 </body>
 
 <script>
-
-function changeToRed() {
-    document.body.style.backgroundColor = "red";
-}
-function changeToOrange() {
-    document.body.style.backgroundColor = "orange";
-}
-function changeToYellow() {
-    document.body.style.backgroundColor = "yellow";
-}
-function changeToGreen() {
-    document.body.style.backgroundColor = "green";
-}
-function changeToBlue() {
-    document.body.style.backgroundColor = "blue";
-}
-function changeToIndigo() {
-    document.body.style.backgroundColor = "indigo";
-}
-function changeToViolet() {
-    document.body.style.backgroundColor = "violet";
-}
-
+    function changeToColor(clicked_color) {
+        document.body.style.backgroundColor = clicked_color;
+    }
 </script>
 
 </html>
